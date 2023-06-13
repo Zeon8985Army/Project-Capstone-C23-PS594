@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lexend"
+            android:text="Registrasi"
+            android:textColor="@color/text"
+            android:textSize="42dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lexend"
+            android:drawableLeft="@drawable/ic_baseline_person_24dp"
+            android:drawablePadding="8dp"
+            android:textColor="@color/text"
+            android:textSize="20dp"
+            android:ems="13"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:ems="13"
+                android:fontFamily="@font/lexend"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/showpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_baseline_remove_red_eye_24"
+                >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/check_password"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="8dp"
+            android:ems="13"
+            android:fontFamily="@font/lexend"
+            android:hint="Konfirmasi Password"
+            android:inputType="textPassword"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/submit_singup"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:textSize="17dp"
+            android:fontFamily="@font/lexend"
+            android:background="@drawable/background_border_full_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Daftar"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lexend"
+                android:text="Sudah memiliki akun ?"
+                android:textColor="@color/text"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="Masuk"
+                android:textAlignment="center"
+                android:textColor="@color/register"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo_app_2"
+            />
+        <TextView
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CP23-PS594"
+            android:textAlignment="center"
+            android:textColor="@color/textInput"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+    </LinearLayout>
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:background="#d3d3d3"-->
+<!--        app:cardCornerRadius="40dp"-->
+<!--        app:cardElevation="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/view"-->
+<!--        tools:layout_editor_absoluteX="30dp">-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:layout_marginTop="20dp">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="90dp"-->
+        <!--                android:layout_height="90dp"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:src="@drawable/google_button" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--            </LinearLayout>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="15dp"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:text="Belum punya akun ?"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textSize="20sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/registerGoogle"-->
+        <!--                android:clickable="true"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:text="Register"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/register"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:textSize="20sp" />-->
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/Signin_2"-->
+        <!--                android:clickable="true"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:background="@android:color/black"-->
+        <!--                android:padding="16dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:layout_gravity="start"-->
+        <!--                    android:src="@drawable/google_button"-->
+        <!--                    android:layout_marginEnd="10dp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_gravity="center"-->
+        <!--                    android:text="Sign in with Google"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textSize="20sp"-->
+        <!--                    android:textColor="@android:color/white"/>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+</LinearLayout>
+

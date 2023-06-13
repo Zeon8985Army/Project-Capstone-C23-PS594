@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "226704100349",
+    "project_id": "capstone-fruit-fresh-detection",
+    "storage_bucket": "capstone-fruit-fresh-detection.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226704100349:android:658adb8f2428de618ca794",
+        "android_client_info": {
+          "package_name": "id.ac.ukdw.fruit_freshned_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226704100349-8n6scd6phac4jd766pfrmepl5c65hrj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.ukdw.fruit_freshned_app",
+            "certificate_hash": "0bbf2dac1ed37d95c10aa9f5d2c974f5889c23c5"
+          }
+        },
+        {
+          "client_id": "226704100349-l5616h54k0l7j0gsn5a51gpl43hat58i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc7EWZBm842Qzxa9LVZwSP2GHcKXi2iIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226704100349-i7sha228brjqm5lkqm9apk6slsl4p744.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
