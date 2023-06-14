@@ -1,8 +1,8 @@
 package id.ac.ukdw.fruit_freshned_app
 
+import android.R.attr
 import android.app.ProgressDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
 import android.util.Log
@@ -11,10 +11,11 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+
 
 // This Class is used for registration from new user
 class RegisterScreenActivity : AppCompatActivity() {
@@ -79,6 +80,14 @@ class RegisterScreenActivity : AppCompatActivity() {
             return true
         }
         else {
+            // Check password requerment
+            val passwordStr = password.text.toString()
+            val passwordRegex = Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{6,8}$")
+            if (!passwordStr.matches(passwordRegex)) {
+                password.error = "1 huruf kecil, 1 huruf besar, 1 angka, dan panjang 6-8 karakter"
+                return true
+            }
+
             // Check if password,email or confirm password is empty or not
             if (email.text.toString()=="" || password.text.toString()==""|| confirmpassword.text.toString()==""){
                 email.setError("Tidak Boleh kosong")
