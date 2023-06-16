@@ -2,10 +2,10 @@ import tensorflow as tf
 import numpy as np
 from io import BytesIO
 import urllib.request
-from tensorflow import keras
-from keras.utils import load_img, img_to_array
+from tensorflow.keras.utils import load_img, img_to_array
 
-model = tf.keras.models.load_model('fresh_fruit_alpha_v3.h5')
+model = tf.keras.models.load_model('fresh_fruit_alpha_v41.h5')
+
 def loadImage(image_url):
     print("In load iamge")
 
@@ -16,6 +16,7 @@ def loadImage(image_url):
     with urllib.request.urlopen(req) as url:
         img = load_img(BytesIO(url.read()), target_size=(150, 150))
     return img_to_array(img)
+
 def model_predict(url):
     print("In model predict")
     x = loadImage(url)

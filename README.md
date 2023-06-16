@@ -7,6 +7,6 @@ Currently using Flask as Framework.
 3. Download model. for further about it at down this section
 
 ### Download Model
-Currently the API using `fresh_fruit_alpha_v3.h5`
-You can access the file with this link: https://drive.google.com/file/d/1SuZTvsPi8HepjU7pOQyibzHC-TAHVdm5/view?usp=share_link
+Currently the API using `fresh_fruit_alpha_v41.h5`
+You can access the all model versions with this link: https://drive.google.com/drive/folders/14GRrxlF4GO_RZhFJJfL9FqElXXRmQwN_
  
