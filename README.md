@@ -8,3 +8,5 @@ To Install:
 1. Make sure you have Android Oreo
 2. Give all permision when install from outside Playstore
 3. Install it
+
+## You can check for other path learning in other branches
